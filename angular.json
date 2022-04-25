@@ -2,6 +2,10 @@
   "version": 2,
   "projects": {
     "demo-streaming": "apps/demo-streaming",
-    "demo-streaming-e2e": "apps/demo-streaming-e2e"
+    "demo-streaming-e2e": "apps/demo-streaming-e2e",
+    "demo-streaming-feature-home": "libs/demo-streaming/feature-home",
+    "demo-streaming-feature-shell": "libs/demo-streaming/feature-shell",
+    "shared-models": "libs/shared/models",
+    "shared-environments": "libs/shared/environments"
   }
 }

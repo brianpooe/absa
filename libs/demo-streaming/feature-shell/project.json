@@ -1,0 +1,8 @@
+{
+  "projectType": "library",
+  "root": "libs/demo-streaming/feature-shell",
+  "sourceRoot": "libs/demo-streaming/feature-shell/src",
+  "prefix": "absa",
+  "targets": {},
+  "tags": []
+}

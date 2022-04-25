@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/demo-streaming",
         "index": "apps/demo-streaming/src/index.html",
@@ -15,10 +17,20 @@
         "tsConfig": "apps/demo-streaming/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
-          "apps/demo-streaming/src/favicon.ico",
-          "apps/demo-streaming/src/assets"
+          {
+            "glob": "favicon.ico",
+            "input": "libs/shared/assets/src",
+            "output": "./"
+          },
+          {
+            "glob": "**/*",
+            "input": "libs/shared/assets/src",
+            "output": "assets"
+          }
         ],
-        "styles": ["apps/demo-streaming/src/styles.scss"],
+        "styles": [
+          "libs/shared/styles/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -37,8 +49,8 @@
           ],
           "fileReplacements": [
             {
-              "replace": "apps/demo-streaming/src/environments/environment.ts",
-              "with": "apps/demo-streaming/src/environments/environment.prod.ts"
+              "replace": "libs/shared/environments/src/lib/environment.ts",
+              "with": "libs/shared/environments/src/lib/environment.prod.ts"
             }
           ],
           "outputHashing": "all"
@@ -83,7 +95,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/demo-streaming"],
+      "outputs": [
+        "coverage/apps/demo-streaming"
+      ],
       "options": {
         "jestConfig": "apps/demo-streaming/jest.config.ts",
         "passWithNoTests": true

@@ -14,7 +14,18 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@absa/demo-streaming/feature-home": [
+        "libs/demo-streaming/feature-home/src/index.ts"
+      ],
+      "@absa/demo-streaming/feature-shell": [
+        "libs/demo-streaming/feature-shell/src/index.ts"
+      ],
+      "@absa/shared/models": [
+        "libs/shared/models/src/index.ts"
+      ],
+      "@absa/shared/environments": ["libs/shared/environments/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

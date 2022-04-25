@@ -2,9 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'absa-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  template: `<router-outlet></router-outlet>`,
+  styles: [
+    `
+      :host {
+        display: block;
+      }
+    `,
+  ],
 })
-export class AppComponent {
-  title = 'demo-streaming';
-}
+export class AppComponent {}
