@@ -1,0 +1,28 @@
+{
+  "root": "apps/demo-streaming-e2e",
+  "sourceRoot": "apps/demo-streaming-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/demo-streaming-e2e/cypress.json",
+        "devServerTarget": "demo-streaming:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "demo-streaming:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/demo-streaming-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["demo-streaming"]
+}
