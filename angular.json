@@ -5,7 +5,9 @@
     "demo-streaming-e2e": "apps/demo-streaming-e2e",
     "demo-streaming-feature-home": "libs/demo-streaming/feature-home",
     "demo-streaming-feature-shell": "libs/demo-streaming/feature-shell",
+    "shared-data-access": "libs/shared/data-access",
+    "shared-environments": "libs/shared/environments",
     "shared-models": "libs/shared/models",
-    "shared-environments": "libs/shared/environments"
+    "shared-utils-component-store-helpers": "libs/shared/utils/component-store-helpers"
   }
 }
