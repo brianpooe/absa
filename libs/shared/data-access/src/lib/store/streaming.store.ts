@@ -21,9 +21,7 @@ export const initialStreamingState: StreamingState = {
   error: undefined,
 };
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable()
 export class StreamingStore extends ComponentStore<StreamingState> {
   private readonly selectors = getComponentStateSelectors(this);
 
@@ -68,7 +66,7 @@ export class StreamingStore extends ComponentStore<StreamingState> {
     );
   });
 
-  addEntries = (entries: Entry[]): void => {
+  readonly addEntries = (entries: Entry[]): void => {
     this.patchState(() => ({
       entries,
       isLoading: false,

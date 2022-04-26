@@ -1,4 +1,5 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
+import { StreamingStore } from '@absa/shared/data-access';
 
 @Component({
   selector: 'absa-home-container',
@@ -12,4 +13,10 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeContainerComponent {}
+export class HomeContainerComponent implements OnInit {
+  constructor(private readonly streamingStore: StreamingStore) {}
+
+  ngOnInit(): void {
+    this.streamingStore.getAllEntriesEffect();
+  }
+}
