@@ -5,11 +5,8 @@ import {
   SpyObject,
 } from '@ngneat/spectator/jest';
 import { subscribeSpyTo } from '@hirez_io/observer-spy';
-import {
-  StreamingService,
-  StreamingState,
-  StreamingStore,
-} from '@absa/shared/data-access';
+import { StreamingService } from '../service/streaming.service';
+import { StreamingState, StreamingStore } from '../store/streaming.store';
 import { Entry } from '@absa/shared/models';
 
 describe(StreamingStore.name, () => {

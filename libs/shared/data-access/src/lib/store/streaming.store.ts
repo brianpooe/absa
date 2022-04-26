@@ -5,7 +5,7 @@ import { Observable, take, tap } from 'rxjs';
 import { Entry } from '@absa/shared/models';
 import { HttpErrorResponse } from '@angular/common/http';
 import { getComponentStateSelectors } from '@absa/shared/utils/component-store-helpers';
-import { StreamingService } from '@absa/shared/data-access';
+import { StreamingService } from '../service/streaming.service';
 
 export interface StreamingState {
   readonly entries: Entry[] | undefined;
