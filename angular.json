@@ -8,6 +8,9 @@
     "shared-data-access": "libs/shared/data-access",
     "shared-environments": "libs/shared/environments",
     "shared-models": "libs/shared/models",
+    "shared-ui-footer": "libs/shared/ui/footer",
+    "shared-ui-header": "libs/shared/ui/header",
+    "shared-ui-title": "libs/shared/ui/title",
     "shared-utils-component-store-helpers": "libs/shared/utils/component-store-helpers"
   }
 }

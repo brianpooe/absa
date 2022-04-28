@@ -25,6 +25,9 @@
       "@absa/shared/data-access": ["libs/shared/data-access/src/index.ts"],
       "@absa/shared/environments": ["libs/shared/environments/src/index.ts"],
       "@absa/shared/models": ["libs/shared/models/src/index.ts"],
+      "@absa/shared/ui/footer": ["libs/shared/ui/footer/src/index.ts"],
+      "@absa/shared/ui/header": ["libs/shared/ui/header/src/index.ts"],
+      "@absa/shared/ui/title": ["libs/shared/ui/title/src/index.ts"],
       "@absa/shared/utils/component-store-helpers": [
         "libs/shared/utils/component-store-helpers/src/index.ts"
       ]

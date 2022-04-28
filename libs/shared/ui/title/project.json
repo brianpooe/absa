@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/ui/title",
+  "sourceRoot": "libs/shared/ui/title/src",
+  "prefix": "absa",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/ui/title"],
+      "options": {
+        "jestConfig": "libs/shared/ui/title/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/ui/title/**/*.ts",
+          "libs/shared/ui/title/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
