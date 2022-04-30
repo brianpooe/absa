@@ -1,6 +1,5 @@
 import {
   Component,
-  OnInit,
   ViewEncapsulation,
   ChangeDetectionStrategy,
 } from '@angular/core';
@@ -12,8 +11,4 @@ import {
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TitleComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
-}
+export class TitleComponent {}

@@ -58,3 +58,18 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+:root {
+  --absa-primary-color: hsl(213, 100%, 55%);
+  --absa-secondary-color: hsl(0, 0%, 12%);
+  --absa-accent-color: hsl(0, 0%, 25%);
+
+  --absa-text-primary-color: hsl(30, 100%, 98%);
+  --absa-text-secondary-color: hsl(51, 19%, 61%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+  font-family: 'Raleway', sans-serif;
+}
