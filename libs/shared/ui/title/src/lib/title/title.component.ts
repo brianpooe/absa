@@ -2,6 +2,7 @@ import {
   Component,
   ViewEncapsulation,
   ChangeDetectionStrategy,
+  Input,
 } from '@angular/core';
 
 @Component({
@@ -11,4 +12,6 @@ import {
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TitleComponent {}
+export class TitleComponent {
+  @Input() title: string | undefined;
+}
