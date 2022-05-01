@@ -1,0 +1,18 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/utils/animations",
+  "sourceRoot": "libs/shared/utils/animations/src",
+  "prefix": "absa",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/utils/animations/**/*.ts",
+          "libs/shared/utils/animations/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

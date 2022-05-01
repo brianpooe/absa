@@ -7,11 +7,10 @@ import { StreamingStore } from '@absa/shared/data-access';
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild([
-      { path: '', pathMatch: 'full', component: HomeContainerComponent },
-    ]),
+    RouterModule.forChild([{ path: '', component: HomeContainerComponent }]),
   ],
   declarations: [HomeContainerComponent],
   providers: [StreamingStore],
+  exports: [HomeContainerComponent],
 })
 export class DemoStreamingFeatureHomeModule {}

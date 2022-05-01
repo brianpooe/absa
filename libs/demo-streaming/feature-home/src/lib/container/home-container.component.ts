@@ -3,7 +3,7 @@ import { StreamingStore } from '@absa/shared/data-access';
 
 @Component({
   selector: 'absa-home-container',
-  template: ` <p>home-container works!</p> `,
+  template: ` <p>home container</p> `,
   styles: [
     `
       :host {

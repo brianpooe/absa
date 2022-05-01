@@ -3,14 +3,14 @@
   "projects": {
     "demo-streaming": "apps/demo-streaming",
     "demo-streaming-e2e": "apps/demo-streaming-e2e",
+    "demo-streaming-feature-footer": "libs/demo-streaming/feature-footer",
+    "demo-streaming-feature-header": "libs/demo-streaming/feature-header",
     "demo-streaming-feature-home": "libs/demo-streaming/feature-home",
-    "demo-streaming-feature-shell": "libs/demo-streaming/feature-shell",
     "shared-data-access": "libs/shared/data-access",
     "shared-environments": "libs/shared/environments",
     "shared-models": "libs/shared/models",
-    "shared-ui-footer": "libs/shared/ui/footer",
-    "shared-ui-header": "libs/shared/ui/header",
     "shared-ui-title": "libs/shared/ui/title",
+    "shared-utils-animations": "libs/shared/utils/animations",
     "shared-utils-component-store-helpers": "libs/shared/utils/component-store-helpers"
   }
 }

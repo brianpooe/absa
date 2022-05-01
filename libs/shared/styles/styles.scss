@@ -59,6 +59,15 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: orange 5px auto;
+}
+
 :root {
   --absa-primary-color: hsl(213, 100%, 55%);
   --absa-secondary-color: hsl(0, 0%, 12%);
