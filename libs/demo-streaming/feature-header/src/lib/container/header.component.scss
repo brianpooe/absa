@@ -54,7 +54,7 @@
   position: absolute;
   inset-block: 4.5rem;
   height: 5.5em;
-  background-color: var(--absa-accent-color);
+  background-color: var(--absa-primary-color);
   border-radius: 0.5em;
   margin-right: 0.5rem;
   transition: height 0.3s ease-in-out;
@@ -85,5 +85,6 @@
 }
 
 .header-dropdown--items li:hover {
-  color: var(--absa-text-secondary-color);
+  color: var(--absa-text-primary-color);
+  opacity: 0.5;
 }

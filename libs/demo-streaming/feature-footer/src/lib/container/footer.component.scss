@@ -1,3 +1,80 @@
 :host {
   display: block;
 }
+
+.container {
+  background-color: var(--absa-secondary-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-inline: 100px;
+  cursor: pointer;
+  padding: 0.25em 0;
+  border-bottom: 2px solid var(--absa-text-secondary-color);
+}
+
+
+li:hover {
+  color: var(--absa-text-secondary-color);
+}
+
+nav {
+  color: var(--absa-text-primary-color);
+  font-weight: 200;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-top: 1em;
+  text-align: center;
+}
+
+p {
+  margin-top: 2em;
+  color: var(--absa-text-primary-color);
+  width: 100%;
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+
+.company-icons-container {
+  margin-top: 2em;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+.social-media-icons img {
+  width: 2em;
+  height: 2em;
+  margin: 1em;
+}
+
+.company-app-stores {
+  border-top: 2px solid var(--absa-text-secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-app-stores img {
+  width: 12em;
+  padding: 1em;
+}
+
