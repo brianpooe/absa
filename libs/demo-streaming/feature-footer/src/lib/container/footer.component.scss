@@ -42,7 +42,7 @@ p {
   width: 100%;
   text-align: center;
   font-weight: 200;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
 }
 
 
@@ -71,10 +71,14 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 2em;
 }
 
 .company-app-stores img {
   width: 12em;
-  padding: 1em;
+  padding: 0.7em;
 }
 
+.company-app-stores img:first-child {
+  margin-top: 2em;
+}

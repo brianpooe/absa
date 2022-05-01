@@ -8,22 +8,25 @@ import { getComponentStateSelectors } from '@absa/shared/utils/component-store-h
 import { StreamingService } from '../service/streaming.service';
 
 export interface StreamingState {
-  readonly entries: Entry[] | undefined;
+  readonly entries: Entry[] | null;
+  readonly titles: Entry[];
   readonly isLoading: boolean;
   readonly loaded: boolean;
-  readonly error: HttpErrorResponse | undefined;
+  readonly error: string | null;
 }
 
 export const initialStreamingState: StreamingState = {
   entries: [],
+  titles: [],
   isLoading: false,
   loaded: false,
-  error: undefined,
+  error: null,
 };
 
 @Injectable()
 export class StreamingStore extends ComponentStore<StreamingState> {
   private readonly selectors = getComponentStateSelectors(this);
+  readonly key = 'programType';
 
   readonly vm$: Observable<StreamingState> = this.select(
     this.selectors.entries$,
@@ -31,12 +34,17 @@ export class StreamingStore extends ComponentStore<StreamingState> {
     this.selectors.loaded$,
     this.selectors.error$,
     (
-      entries: Entry[] | undefined,
+      entries: Entry[] | null,
       isLoading: boolean,
       loaded: boolean,
-      error: HttpErrorResponse | undefined
+      error: string | null
     ) => ({
       entries,
+      titles: [
+        ...new Map(
+          entries?.map((item) => [item?.['programType'], item])
+        ).values(),
+      ],
       isLoading,
       loaded,
       error,
@@ -56,8 +64,9 @@ export class StreamingStore extends ComponentStore<StreamingState> {
           tapResponse(
             (response: Entry[]) => this.addEntries(response),
             (error: HttpErrorResponse) => {
+              console.error(error);
               this.patchState(() => ({
-                error,
+                error: 'Oops, something went wrong.',
               }));
             }
           )
@@ -66,7 +75,7 @@ export class StreamingStore extends ComponentStore<StreamingState> {
     );
   });
 
-  readonly addEntries = (entries: Entry[]): void => {
+  readonly addEntries = (entries: Entry[] = []): void => {
     this.patchState(() => ({
       entries,
       isLoading: false,

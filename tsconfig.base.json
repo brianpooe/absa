@@ -25,12 +25,19 @@
       "@absa/demo-streaming/feature-home": [
         "libs/demo-streaming/feature-home/src/index.ts"
       ],
+      "@absa/demo-streaming/feature-movies": [
+        "libs/demo-streaming/feature-movies/src/index.ts"
+      ],
+      "@absa/demo-streaming/feature-series": [
+        "libs/demo-streaming/feature-series/src/index.ts"
+      ],
       "@absa/demo-streaming/feature-shell": [
         "libs/demo-streaming/feature-shell/src/index.ts"
       ],
       "@absa/shared/data-access": ["libs/shared/data-access/src/index.ts"],
       "@absa/shared/environments": ["libs/shared/environments/src/index.ts"],
       "@absa/shared/models": ["libs/shared/models/src/index.ts"],
+      "@absa/shared/ui/content": ["libs/shared/ui/content/src/index.ts"],
       "@absa/shared/ui/title": ["libs/shared/ui/title/src/index.ts"],
       "@absa/shared/utils/animations": [
         "libs/shared/utils/animations/src/index.ts"

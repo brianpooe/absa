@@ -6,9 +6,12 @@
     "demo-streaming-feature-footer": "libs/demo-streaming/feature-footer",
     "demo-streaming-feature-header": "libs/demo-streaming/feature-header",
     "demo-streaming-feature-home": "libs/demo-streaming/feature-home",
+    "demo-streaming-feature-movies": "libs/demo-streaming/feature-movies",
+    "demo-streaming-feature-series": "libs/demo-streaming/feature-series",
     "shared-data-access": "libs/shared/data-access",
     "shared-environments": "libs/shared/environments",
     "shared-models": "libs/shared/models",
+    "shared-ui-content": "libs/shared/ui/content",
     "shared-ui-title": "libs/shared/ui/title",
     "shared-utils-animations": "libs/shared/utils/animations",
     "shared-utils-component-store-helpers": "libs/shared/utils/component-store-helpers"

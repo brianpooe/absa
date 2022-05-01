@@ -1,0 +1,10 @@
+<div class="container">
+  <ng-container *ngFor="let entry of entries">
+    <div class="card">
+      <div class="card-image">
+        <img loading="lazy" [src]="IMAGE_PLACEHOLDER" [alt]="entry.description">
+      </div>
+      <h1>{{entry.programType}}</h1>
+    </div>
+  </ng-container>
+</div>

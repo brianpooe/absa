@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/demo-streaming/feature-movies",
+  "sourceRoot": "libs/demo-streaming/feature-movies/src",
+  "prefix": "absa",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/demo-streaming/feature-movies"],
+      "options": {
+        "jestConfig": "libs/demo-streaming/feature-movies/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/demo-streaming/feature-movies/**/*.ts",
+          "libs/demo-streaming/feature-movies/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

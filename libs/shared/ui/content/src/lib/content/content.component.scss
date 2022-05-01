@@ -1,0 +1,46 @@
+:host {
+  display: block;
+}
+
+.container {
+  width: 100%;
+  margin: 3em 0;
+  padding: 2em;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--absa-secondary-color);
+  margin: 0 2em;
+  padding: 3em 0;
+}
+
+h1 {
+  position: absolute; /* Important */
+  top: 50%; /* Position Y halfway in */
+  left: 50%; /* Position X halfway in */
+  transform: translate(-50%, -50%); /* Move it halfway back(x,y) */
+
+  text-align: center;
+  font-weight: 600;
+  color: var(--absa-text-primary-color);
+  text-transform: uppercase;
+}
+
+img {
+  width: 45em;
+}
+
+.card-image {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
