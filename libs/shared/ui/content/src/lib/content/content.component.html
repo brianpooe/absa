@@ -1,10 +1,10 @@
-<div class="container">
+<div class="content-container">
   <ng-container *ngFor="let entry of entries">
-    <div class="card">
-      <div class="card-image">
+    <div class="content-container__card content-container__card--bg">
+      <div class="content-container__card-image">
         <img loading="lazy" [src]="IMAGE_PLACEHOLDER" [alt]="entry.description">
       </div>
-      <h1>{{entry.programType}}</h1>
+      <h1 class="content-container__card-text content-container__card-text--color">{{entry.programType}}</h1>
     </div>
   </ng-container>
 </div>
